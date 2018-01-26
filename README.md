@@ -27,6 +27,6 @@ build:
     - app/build/outputs/apk/app-debug.apk
 ```
 
-## Hint
+## Kudos
 
 All Kudos to [jangrewe](https://github.com/jangrewe) and the other contributors.
