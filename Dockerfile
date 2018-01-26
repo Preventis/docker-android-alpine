@@ -3,10 +3,12 @@
 #
 # https://hub.docker.com/r/jangrewe/gitlab-ci-android/
 # https://git.faked.org/jan/gitlab-ci-android
+# https://github.com/benjohnde/gitlab-ci-android
+# Kudos to https://github.com/jangrewe
 #
 
 FROM ubuntu:17.10
-MAINTAINER Jan Grewe <jan@faked.org>
+MAINTAINER Ben John <docker@benjohn.de>
 
 ENV VERSION_SDK_TOOLS "3859397"
 
