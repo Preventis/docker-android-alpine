@@ -27,3 +27,8 @@ build:
     paths:
     - app/build/outputs/apk/app-debug.apk
 ```
+
+## Kudos
+
+- [jangrewe](https://github.com/jangrewe) and the other contributors for the ubuntu android-ci image.
+- [frol](https://github.com/frol) for the [frolvlad/alpine-oraclejdk8:full](https://github.com/frol/docker-alpine-oraclejdk8) alpine docker image.
