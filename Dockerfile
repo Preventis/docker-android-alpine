@@ -27,9 +27,9 @@ RUN while read -r package; do PACKAGES="${PACKAGES}${package} "; done < /sdk/pac
 
 
 # sonar scanner for code quality
-ENV SONAR_SCANNER_VERSION 3.0.3.778
+ENV SONAR_SCANNER_VERSION 3.3.0.1492
 RUN apk add --no-cache wget && \ 
-    curl -L -O  https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-${SONAR_SCANNER_VERSION}.zip && \ 
+    curl -L -O  https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-${SONAR_SCANNER_VERSION}-linux.zip && \ 
     ls -lh && \ 
     unzip sonar-scanner-cli-${SONAR_SCANNER_VERSION} && \ 
     cd /usr/bin && ln -s /sonar-scanner-${SONAR_SCANNER_VERSION}/bin/sonar-scanner sonar-scanner && \ 
