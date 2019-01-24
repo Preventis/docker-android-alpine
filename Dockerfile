@@ -20,10 +20,11 @@ RUN echo "84831b9409646a918e30573bab4c9c91346d8abd" > $ANDROID_HOME/licenses/and
 ADD packages.txt /sdk
 RUN mkdir -p /root/.android
 RUN touch /root/.android/repositories.cfg
+RUN yes | ${ANDROID_HOME}/tools/bin/sdkmanager --licenses
 RUN ${ANDROID_HOME}/tools/bin/sdkmanager --update
 
 RUN while read -r package; do PACKAGES="${PACKAGES}${package} "; done < /sdk/packages.txt && ${ANDROID_HOME}/tools/bin/sdkmanager ${PACKAGES}
-RUN yes | ${ANDROID_HOME}/tools/bin/sdkmanager --licenses
+
 
 # sonar scanner for code quality
 ENV SONAR_SCANNER_VERSION 3.0.3.778
