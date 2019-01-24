@@ -1,4 +1,4 @@
-FROM frolvlad/alpine-oraclejdk8:full
+FROM frolvlad/alpine-oraclejdk8-temporary:full
 MAINTAINER Ben John <docker@benjohn.de>
 
 ENV VERSION_SDK_TOOLS "3859397"
